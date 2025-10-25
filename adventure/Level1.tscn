@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2(240, 300)
+
+[node name="Monster1" parent="." instance=ExtResource( 2 )]
+position = Vector2(520, 320)
+
+[node name="Trap1" parent="." instance=ExtResource( 3 )]
+position = Vector2(360, 400)
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
