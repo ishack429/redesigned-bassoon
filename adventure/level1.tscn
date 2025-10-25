@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="Level1Scene"]
+[node name="Level1" type="Node2D"]
+position = Vector2(0, 0)
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = preload("res://adventure/.godot/imported/01.png") # example of using an imported sprite
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+# Instance taken from PackedScene placeholder (see README for packing)
+
+[node name="EnemySpawner" type="Position2D" parent="."]
+position = Vector2(400, 150)
+
+[node name="Trap1" parent="." instance=ExtResource( 2 )]
+# Trap instance placeholder
+
+[ext_resource path="res://adventure/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://adventure/trap.tscn" type="PackedScene" id=2]
